@@ -1,7 +1,4 @@
-body {
-  background: #fafaf4;
-}
-
-h1 {
-  color: #ff4d6d;
-}
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
