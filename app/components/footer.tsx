@@ -14,7 +14,10 @@ export default function Footer() {
           <a href="#" className="hover:text-neutral-900 transition-colors">
             Instagram
           </a>
-          <a href="#" className="hover:text-neutral-900 transition-colors">
+          <a
+            href="https://github.com/WilmaAura"
+            className="hover:text-neutral-900 transition-colors"
+          >
             GitHub
           </a>
           <a href="#" className="hover:text-neutral-900 transition-colors">

@@ -9,12 +9,12 @@ export default function Hero() {
 
       {/* The Big Headline */}
       <h1 className=" mt-4 text-4xl md:text-5xl font-serif font-medium leading-tight text-neutral-900">
-        Hasil Tulisan untuk <br /> Mengabadikan Ingatan
+        Karya Tulis untuk <br /> Mengabadikan Ingatan
       </h1>
 
       <p className="mt-6 text-lg text-neutral-500 leading-relaxed max-w-lg">
         Selamat datang di blog saya. Di sini, saya menulis tentang cerpen,
-        penelitian kecil, dan segala hal yang aku pelajari.
+        ringkasan buku, dan segala hal yang aku pelajari.
       </p>
 
       {/* Divider line to separate from the list */}
