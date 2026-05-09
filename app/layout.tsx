@@ -16,7 +16,6 @@ export default function RootLayout({
         <Navbar />
         {/* Content Area - Tambahkan flex-1 agar dia 'mengambil' sisa ruang */}
         <main className="w-full max-w-xl px-6 py-10 flex-1">{children}</main>
-
         {/* Footer - Sekarang dia akan selalu di bawah karena flex-1 di atas */}
         <div className="w-full max-w-xl px-6">
           <Footer />

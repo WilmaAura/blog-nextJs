@@ -18,7 +18,7 @@ const posts = [
     date: "May 09, 2026",
     description:
       " Damar bertemu dengan wanita yang perawakannya lebih pendek dari Damar, kulitnya putih, dan ia memiliki senyuman yang entah kenapa membuat Damar tersenyum.",
-    Image: "/arch.jpg",
+    Image: "/kolom.jpg",
   },
 ];
 
