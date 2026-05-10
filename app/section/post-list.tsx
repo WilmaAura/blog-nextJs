@@ -41,7 +41,6 @@ export default function PostList() {
                   {artikel.description}
                 </p>
               </div>
-
               {/* Kotak Gambar dengan Image asli */}
               <div className="hidden sm:block relative w-32 h-32 bg-neutral-200 rounded-lg shrink-0 overflow-hidden">
                 {/* Jika belum ada file gambarnya, kotak ini akan tetap abu-abu */}
