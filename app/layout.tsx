@@ -12,13 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className="min-h-screen flex flex-col items-center bg-stone-50 text-neutral-900 
-                       dark:bg-neutral-950 dark:text-neutral-50 transition-colors duration-500"
-      >
+      <body className="min-h-screen flex flex-col items-center bg-stone-50 text-neutral-900">
         <Navbar />
 
-        <main className="w-full max-w-xl px-6 py-10 flex-1">{children}</main>
+        <main className="w-full max-w-4xl px-6 py-10 flex-1">{children}</main>
 
         <div className="w-full max-w-xl px-6">
           <Footer />

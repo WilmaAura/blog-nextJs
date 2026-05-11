@@ -9,7 +9,7 @@ export default function Hero() {
 
       {/* The Big Headline */}
       <h1 className=" mt-4 text-4xl md:text-5xl font-serif font-medium leading-tight text-neutral-900">
-        Karya Tulis untuk <br /> Mengabadikan Ingatan
+        Karya Tulis untuk <br /> Mengabadikan Memory
       </h1>
 
       <p className="mt-6 text-lg text-neutral-500 leading-relaxed max-w-lg">
