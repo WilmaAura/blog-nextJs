@@ -2,10 +2,9 @@ import ThemeToggle from "./themeToggle";
 
 export default function Navbar() {
   return (
-    <nav className="w-full h-14 px-5 py-6 flex justify-between items-center border-b fixed border-gray-100">
+    <nav className="w-full h-14 px-5 py-6 flex justify-between items-center fixed bg-white">
       <div className="font-bold text-xl tracking-tighter">WilmaAura</div>
       <div className="space-x-6 text-sm text-gray500">
-        <ThemeToggle />
         <a href="#">Blog</a>
         <a href="#">Cerpen</a>
       </div>

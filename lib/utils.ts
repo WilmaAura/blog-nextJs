@@ -1,20 +1,21 @@
-// lib/posts.ts
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+import fs from "fs"; //File system: libary node.js untuk membaca/tulis file di ssd/hdd
+import path from "path"; //Mengatur alamat folder
+import matter from "gray-matter"; //Matter: "Penerjemah" buat misahin bagian metadata (---) dan isi cerpen.
 
-const postsDirectory = path.join(process.cwd(), "content/cerpen"); // Sesuaikan folder jika kamu bagi-bagi
+const postDirectory = path.join(
+  process.cwd(),
+  "content/cerpen",
+  "content/ringkasan"
+);
 
 export function getSortedPostsData() {
-  // Ambil semua nama file di folder content/cerpen
-  const fileNames = fs.readdirSync(postsDirectory);
-
+  const fileNames = fs.readdirSync(postDirectory);
   const allPostsData = fileNames.map((fileName) => {
     // Hapus ".md" dari nama file untuk jadi slug/id
     const id = fileName.replace(/\.md$/, "");
 
     // Baca file markdown sebagai string
-    const fullPath = path.join(postsDirectory, fileName);
+    const fullPath = path.join(postDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
     // Gunakan gray-matter untuk membedah bagian metadata
@@ -22,7 +23,7 @@ export function getSortedPostsData() {
 
     return {
       id,
-      slug: id, // Slug kita ambil dari nama filenya
+      slug: id,
       ...(data as {
         title: string;
         date: string;
@@ -32,14 +33,12 @@ export function getSortedPostsData() {
       }),
     };
   });
-
-  // Urutkan artikel berdasarkan tanggal terbaru
   return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
-// Fungsi untuk mengambil isi cerpen lengkap berdasarkan slug
+// untuk mengambil isi md lengkap berdasarkan slug
 export function getPostData(slug: string) {
-  const fullPath = path.join(postsDirectory, `${slug}.md`);
+  const fullPath = path.join(postDirectory, "${slug}.md");
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   const { data, content } = matter(fileContents);

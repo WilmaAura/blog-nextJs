@@ -10,8 +10,8 @@ export default function PostList() {
     artikel.title.toLowerCase().includes(searchQuerry.toLocaleLowerCase())
   );
   return (
-    <section className="mt-12 space-y-12">
-      {/* 2. Input Search Bar */}
+    <section className="mt-20 space-y-12">
+      {/* -- Search Bar -- */}
       <div className="relative mb-10">
         <input
           type="text"
@@ -21,13 +21,12 @@ export default function PostList() {
         />
       </div>
 
-      <div className="space-y-12">
-        {/* 3. Ganti 'posts.map' menjadi 'filteredPosts.map' */}
+      <div className="space-y-24">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((artikel) => (
-            <Link href={`/blog/${artikel.id}`} key={artikel.id}>
+            <Link href={`/blog/${artikel.slug}`} key={artikel.id}>
               <article className="group cursor-pointer">
-                <div className="flex justify-between items-center gap-8">
+                <div className="flex justify-between items-center gap-8 py-4">
                   <div className="space-y-2">
                     <span className="text-xs font-medium text-orange-600 uppercase tracking-wider">
                       {artikel.category} - {artikel.date}
