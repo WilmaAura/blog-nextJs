@@ -4,7 +4,16 @@ import Image from "next/image";
 import { useState } from "react";
 import { posts } from "@/data/posts";
 
-export default function PostList() {
+interface Post {
+  slug: string;
+  title: string;
+  date: string;
+  category: string;
+  description: string;
+  Image?: string;
+}
+
+export default function PostList({ initialPosts }: { initialPosts: Post[] }) {
   const [searchQuerry, setSearchQuerry] = useState("");
   const filteredPosts = posts.filter((artikel) =>
     artikel.title.toLowerCase().includes(searchQuerry.toLocaleLowerCase())
@@ -16,7 +25,7 @@ export default function PostList() {
         <input
           type="text"
           placeholder="Cari artikel..."
-          className="w-full p-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
+          className="w-full p-3 rounded-xl border border-neutral-300 bg-stone-100 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
           onChange={(e) => setSearchQuerry(e.target.value)}
         />
       </div>
