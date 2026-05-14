@@ -25,7 +25,7 @@ export default function PostList({ initialPosts }: { initialPosts: Post[] }) {
         <input
           type="text"
           placeholder="Cari artikel..."
-          className="w-full p-3 rounded-xl border border-neutral-300 bg-stone-100 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
+          className="w-full max-w-96 p-3 rounded-xl border border-neutral-300 bg-stone-100 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"
           onChange={(e) => setSearchQuerry(e.target.value)}
         />
       </div>
@@ -48,7 +48,7 @@ export default function PostList({ initialPosts }: { initialPosts: Post[] }) {
                     </p>
                   </div>
 
-                  <div className="hidden sm:block relative w-32 h-32 bg-neutral-200 rounded-lg shrink-0 overflow-hidden">
+                  <div className="relative w-24 h-24 sm:w-24 sm:h-24 bg-neutral-200 rounded-lg shrink-0 overflow-hidden">
                     {/* Perhatikan 'artikel.image' (pakai i kecil sesuai standar JS) */}
                     {artikel.Image && (
                       <Image
