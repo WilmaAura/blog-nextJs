@@ -2,8 +2,6 @@
 title: "Kolom."
 date: "May 09, 2026"
 category: "Cerpen"
-description: "Damar bertemu dengan wanita yang perawakannya lebih pendek dari Damar..."
-image: "/kolom.jpg"
 ---
 
 Kolom.
