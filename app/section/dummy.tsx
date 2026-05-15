@@ -1,58 +1,74 @@
-// lib/posts.ts
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+"use client"; // Wajib karena pakai state dan event listener
 
-const postsDirectory = path.join(process.cwd(), "content/cerpen"); // Sesuaikan folder jika kamu bagi-bagi
+import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import ThemeToggle from "./themeToggle";
 
-export function getSortedPostsData() {
-  // Ambil semua nama file di folder content/cerpen
-  const fileNames = fs.readdirSync(postsDirectory);
+export default function Navbar() {
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0); // Menyimpan posisi scroll terakhir tanpa trigger re-render
 
-  const allPostsData = fileNames.map((fileName) => {
-    // Hapus ".md" dari nama file untuk jadi slug/id
-    const id = fileName.replace(/\.md$/, "");
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
 
-    // Baca file markdown sebagai string
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
+      // 1. Jika scroll ke bawah dan sudah melewati area atas (misal > 50px), sembunyikan navbar
+      if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
+        setVisible(false);
+      } else {
+        // 2. Jika scroll ke atas, munculkan kembali navbar
+        setVisible(true);
+      }
 
-    // Gunakan gray-matter untuk membedah bagian metadata
-    const { data } = matter(fileContents);
-
-    return {
-      id,
-      slug: id, // Slug kita ambil dari nama filenya
-      ...(data as {
-        title: string;
-        date: string;
-        category: string;
-        description: string;
-        Image: string;
-      }),
+      // Update posisi scroll terakhir
+      lastScrollY.current = currentScrollY;
     };
-  });
 
-  // Urutkan artikel berdasarkan tanggal terbaru
-  return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
-}
+    // Pasang event listener ke window browser
+    window.addEventListener("scroll", handleScroll);
 
-// Fungsi untuk mengambil isi cerpen lengkap berdasarkan slug
-export function getPostData(slug: string) {
-  const fullPath = path.join(postsDirectory, `${slug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+    // Bersihkan event listener saat komponen tidak dipakai (anti memory leak!)
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  const { data, content } = matter(fileContents);
+  return (
+    <nav
+      className={`w-full h-14 px-6 flex justify-between items-center fixed top-0 bg-stone-100/80 backdrop-blur-md z-50 border-b border-neutral-200/50 
+        transition-transform duration-300 ease-in-out
+        ${visible ? "translate-y-0" : "-translate-y-full"}`} // Rahasia transisinya ada di dua class ini
+    >
+      {/* Logo balik ke Home */}
+      <Link
+        href="/"
+        className="font-bold text-xl tracking-tighter hover:text-orange-600 transition-colors"
+      >
+        WilmaAura
+      </Link>
 
-  return {
-    slug,
-    content,
-    ...(data as {
-      title: string;
-      date: string;
-      category: string;
-      description: string;
-      Image: string;
-    }),
-  };
+      <div className="flex items-center space-x-6 text-sm text-neutral-600">
+        <Link
+          href="/"
+          className="hover:text-orange-600 transition-colors font-bold"
+        >
+          Home
+        </Link>
+        <Link
+          href="/blog"
+          className="hover:text-orange-600 transition-colors font-bold"
+        >
+          Blog
+        </Link>
+        {/* Cerpen diarahkan ke slug id # atau page khusus nanti */}
+        <Link
+          href="/"
+          className="hover:text-orange-600 transition-colors font-bold"
+        >
+          Cerpen
+        </Link>
+
+        {/* Jangan lupa ThemeToggle-nya dipasang kembali */}
+        <ThemeToggle />
+      </div>
+    </nav>
+  );
 }

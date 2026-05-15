@@ -4,8 +4,6 @@ date: "May 09, 2026"
 category: "Cerpen"
 ---
 
-Kolom.
-
 Setelah diterimanya Damar dan sebelum masuk SMA impiannya, Damar mengalami mimpi yang begitu singkat. Namun, adegannya tertanam kuat dalam ingatannya. Damar bertemu dengan wanita yang perawakannya lebih pendek dari Damar, kulitnya putih, dan ia memiliki senyuman yang entah kenapa membuat Damar tersenyum. Wanita itu menggandeng tangannya, menariknya dengan lembut, lalu mereka berlarian bersama menuju sebuah kelas. Seketika Damar langsung terbangun dari mimpinya sesampainya di kelas tersebut. Meskipun Damar sudah kelas dua SMA, ia masih ingat mimpi itu. Entah berapa lama ia akan mengingat mimpinya yang singkat dan berkesan.
 
 Damar Dananta Putra memandang hubungan istimewa dengan wanita sebagai sesuatu yang merepotkan. Baginya, hubungan seperti itu atau jatuh cinta berarti harus siap menanggung konsekuensi yang besar. Ia percaya bahwa ketika mencintai seseorang, Damar harus menikahi perempuan tersebut. Alasan dari argumen Damar tidak serta merta muncul begitu saja. Pemikiran ini terbentuk dari kartun-kartun yang ia tonton sewaktu kecil. Damar terkesima dengan cerita pangeran yang setia dengan satu perempuan sehidup semati setelah banyaknya rintangan yang dihadapi. Kalau tidak salah kartun itu adalah salah satu film Disney Princess. Damar juga ingin cinta pertamanya dengan satu wanita dan selamanya.
@@ -361,23 +359,3 @@ Akhir-akhir ini Damar suka membaca buku lagi. Ia beli dan meminjam banyak buku. 
 Ini adalah pertama kalinya aku jatuh cinta dan aku bertanya-tanya kenapa? Padahal aku tidak mendapat apapun. Kamu aja mungkin lupa ulang tahunku. Lupa bahwa aku ada di dunia ini. Tetapi, aku masih ingin memberimu sesuatu, untuk saat ini masih terbatas sih. Kalau misalnya kamu memiliki perasaan yang sama, aku akan menjaga perasaanku. Aku ingin tahu perasaanmu. Itu sih yang aku inginkan, tapi sepertinya itu adalah syarat jadi ya ga perlu dipikirin juga. Ini adalah pure keinginanku. Yah yaudah deh, at least kamu ada di bagian diriku dan membantuku untuk menjadi apa yang aku inginkan. Punya hubungan yang seperti itu juga merepotkan, tapi kalau sama kamu aku mau. Aku punya kekurangan dan aku menjamin akan melakukan kesalahan dan memperbaikinya. Itu cuma perkataan sih, pasti semua perkataan butuh bukti dan aku hanya perlu membuktikannya. Maaf dulu aku pernah memalingkan diriku kepada orang lain. Aku menyesal dulu membencimu lalu menyerah begitu saja. Cinta seharusnya diperjuangkan, tapi aku malah menyerah.
 
 Balik lagi, entah aku mengatakan aku tidak merokok, aku ganteng, aku pekerja keras, aku bisa alat musik, aku berolahraga dan punya otot yang keren, aku adalah laki-laki yang memegang perkataannya. Tidak akan ada artinya. Cinta adalah keinginan pribadi. Aku tidak bisa mengatur keinginanmu. Padahal aku tidak suka yang berkaitan dengan hal yang tidak bisa aku kontrol, tapi ya mau gimana, aku mencintaimu? Kamu cantik, mungil, lucu, pintar, dulu bau mulut sih, tai kamu juga bau. Aku menerima semua sisi darimu karena memang seharusnya seperti itu. Kita adalah makhluk biologis, bisa mengeluarkan bau tidak sedap, melakukan kesalahan, lupa, otak kita tidak sebagus itu yang rentan melakukan bias kognitif dan sebagainya. Seharusnya seseorang bisa memaklumi hal tersebut terhadap pasangannya. Pasti tidak enak dan hanya perlu mengatasi masalah tersebut. Konflik pasti akan terjadi ketika dua orang berbeda, latar belakang yang berbeda menjadi satu. Itulah yappingku, lalu apa artinya aku mencintaimu? Mungkin, mencintaimu cuma akan menjadi cerpen yang berakhir dengan titik dan tanda petik.”
-
-3 Tahun
-Akhirnya aku memberanikan diri untuk memberikan cerpen itu kepadamu. Aku tidak mengharapkan apapun sebenarnya. Sampai kamu bilang “Bentar ya, ini lagi aku baca kok.” Aku membalas dengan emot senyum. Btw, karena sekarang zaman digital,cerpen itu aku kirim lewat whatsapp dalam satu file docs.
-Kerangka:
-Diterima lagi, Lili suka lagi.
-Lili memuji damar kalau dia writer yang baik.
-Akhirnya damar telepon dengan lili, damar bicara panjang lebar, tapi lili masih diam malu.
-Interaksi hanya telponan dan chatting, mabar kadang.
-Suatu hari pada bulan agustus Damar berencana untuk pergi,
-Ia pertama kali naik kereta sendiri, bingung
-Parno ketinggalan kereta dan tidak sabar bertemu lili setelah 1 tahun lamanya.
-Ngga tau jalan keluar stasiun karena ngide nyari jalan keluar sendiri
-Lili menjemput sing princess
-Waktu sma, suatu saat aku pengen boncengin kamu
-Bubur ayam ngga enak
-Mampir ke pasar gede solo
-Beli dimsum
-Pertama kali ke gramedia bersama lili
-
-Situasi tidak mendukung, game juga masih banyak yang belum tamat
