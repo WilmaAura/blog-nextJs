@@ -2,13 +2,9 @@ import fs from "fs"; //File system: libary node.js untuk membaca/tulis file di s
 import path from "path"; //Mengatur alamat folder
 import matter from "gray-matter"; //Matter: "Penerjemah" buat misahin bagian metadata (---) dan isi cerpen.
 
-const postDirectory = path.join(
-  process.cwd(),
-  "content/cerpen",
-  "content/ringkasan"
-);
+const postDirectory = path.join(process.cwd(), "app/content/cerpen");
 
-export function getSortedPostsData() {
+export function getStoredPostsData() {
   const fileNames = fs.readdirSync(postDirectory);
   const allPostsData = fileNames.map((fileName) => {
     // Hapus ".md" dari nama file untuk jadi slug/id
@@ -38,7 +34,7 @@ export function getSortedPostsData() {
 
 // untuk mengambil isi md lengkap berdasarkan slug
 export function getPostData(slug: string) {
-  const fullPath = path.join(postDirectory, "${slug}.md");
+  const fullPath = path.join(postDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   const { data, content } = matter(fileContents);
