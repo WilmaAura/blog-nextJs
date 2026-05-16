@@ -1,8 +1,6 @@
-// section/hero.tsx
-
 export default function Hero() {
   return (
-    <section className="py-16 bordder-b border-neutral-100 mb-12">
+    <section className="py-16 border-b border-neutral-100 mb-12">
       <span className="text-xs font-semibold uppercase tracking-widest text-orange-600">
         Wilma's Blog
       </span>
