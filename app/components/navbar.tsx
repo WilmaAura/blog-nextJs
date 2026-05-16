@@ -13,7 +13,7 @@ export default function Navbar() {
   const lastScrolly = useRef(0); //Menyimpan posisi scroll terakhir tanpa trigger re-render
 
   useEffect(() => {
-    let timeout; //It's not even an error, its just typescript needs a type of the variable
+    let timeout: ReturnType<typeof setTimeout>; //It's not even an error, its just typescript needs a type of the variable
     //function yang dijalankan setiap user scroll
     const handleScroll = () => {
       const currentScrolly = window.scrollY; //Ambil posisi scroll browser secarang
@@ -43,28 +43,22 @@ export default function Navbar() {
     >
       <Link
         href="/"
-        className="font-bold text-xl tracking-tighter hover:text-orange-600"
+        className="font-bold font-serif text-3xl tracking-tighter hover:text-orange-600"
       >
-        WilmaAura
+        AURA
       </Link>
       <div className="space-x-6 text-sm text-gray500">
         <Link
           href="/"
-          className="hover:text-orange-600 transition-colors font-bold"
+          className="hover:text-orange-600 transition-colors font-bold text-xl"
         >
           Home
         </Link>
         <Link
           href="/blog"
-          className="hover:text-orange-600 transition-colors font-bold"
+          className="hover:text-orange-600 transition-colors font-bold text-xl"
         >
           Blog
-        </Link>
-        <Link
-          href="/"
-          className="hover:text-orange-600 transition-colors font-bold"
-        >
-          Cerpen
         </Link>
       </div>
     </nav>
