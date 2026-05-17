@@ -11,7 +11,10 @@ export default function Footer() {
 
         {/* Link Sosial Media atau Navigasi Kecil */}
         <div className="flex gap-6 text-sm text-neutral-400">
-          <a href="#" className="hover:text-neutral-900 transition-colors">
+          <a
+            href="https://www.instagram.com/wilmaark/"
+            className="hover:text-neutral-900 transition-colors"
+          >
             Instagram
           </a>
           <a

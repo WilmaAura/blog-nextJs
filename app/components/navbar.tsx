@@ -35,9 +35,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // color palate: #253551
   return (
     <nav
-      className={`w-full h-14 px-6 flex justify-between items-center fixed top-0 bg-stone-100/80 backdrop-blur-md z-50 border-b border-neutral-200/50 
+      className={`w-full h-14 px-6 flex justify-between items-center fixed top-0 bg-[##fcfcfc] backdrop-blur-md z-50  
         transition-transform duration-300 ease-in-out
         ${visible ? "translate-y-0" : "-translate-y-full"}`} // jika visible === true maka keliatan navbarnya (translate-y-0). Else: jika visible === false maka navbar digeser keatas sejauh tinggi penuh navbar.
     >
